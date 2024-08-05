@@ -15,7 +15,7 @@ router.post("/urlSubmit", async (req, res) => {
     res
       .status(200)
       .json({
-        shortUrl: `https://longurl-shortener-server.vercel.app/${randomUrl}`,
+        shortUrl: `https://weblifyurl.vercel.app/${randomUrl}`,
       });
   } catch (error) {
     console.error(error.message);
