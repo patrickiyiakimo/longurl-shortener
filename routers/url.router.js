@@ -12,7 +12,11 @@ router.post("/urlSubmit", async (req, res) => {
     });
     await urlSubmit.save();
 
-    res.status(200).json({ shortUrl: `http://localhost:8000/${randomUrl}` });
+    res
+      .status(200)
+      .json({
+        shortUrl: `https://longurl-shortener-server.vercel.app/${randomUrl}`,
+      });
   } catch (error) {
     console.error(error.message);
     res.status(400).send("Error while shortening URL");
