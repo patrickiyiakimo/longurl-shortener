@@ -4,7 +4,7 @@ const db = require("./config/db");
 const app = require("./app");
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("Weblify the best long URL shortener");
 });
 
 const server = async () => {
