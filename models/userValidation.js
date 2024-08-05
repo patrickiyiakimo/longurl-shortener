@@ -6,7 +6,7 @@ const userValidationSchema = Joi.object({
     .required()
     .email({
       minDomainSegments: 2,
-      tlds: { allow: ["com", "net", "@", "org"] }, // You can add more valid TLDs here
+      tlds: { allow: ["com", "net", "@", "org"] },
     }),
   password: Joi.string().pattern(new RegExp("^[a-zA-Z0-9]{3,30}$")).required(),
 });
